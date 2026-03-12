@@ -68,7 +68,7 @@ To compile the Engine use [gfortran](https://gcc.gnu.org/wiki/GFortran)
 
 ### Running EddyPro on the Terminal
 
-The executables are created in the `bin` folder after `make`. It might be placed in folder with the name of the operating system it was built on, e.g., `mac`, `win`, or `linux`. They are called:
+The executables are created in the `bin` folder after `make`. It might be placed in a folder with the name of the operating system it was built on, e.g., `mac`, `win`, or `linux`. They are called:
 
 - `eddypro_rp`
 - `eddypro_fcc`
