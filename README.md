@@ -66,6 +66,40 @@ To compile the Engine use [gfortran](https://gcc.gnu.org/wiki/GFortran)
     $ make rp
     $ make fcc
 
+### Running EddyPro on the Terminal
+
+The executables are created in the `bin` folder after `make`. It might be placed in folder with the name of the operating system it was built on, e.g., `mac`, `win`, or `linux`. They are called:
+
+- `eddypro_rp`
+- `eddypro_fcc`
+
+To run them, the `*.metadata` and `*.eddypro` files are needed. A suggestion is to create the metadata and eddypro files using the GUI version of EddyPro and store them in the same folder as the metadata and eddypro files. Alternatively, the paths in the `*.eddypro` and `*.metadata` can be modified to reflect the folder structure.
+
+Arguments that should be changed are:
+In the `*.eddypro`,
+- `ex_dir`
+- `ex_file`
+- `sa_bin_spectra`
+- `sa_full_spectra`
+- `file_name`
+- `out_path`
+- `proj_file`
+- `proj_file`
+- `date_path`
+In the `*.metadata`,
+- `data_path`
+- `file_name`
+
+After placing the GHG files in the appropriate folder, the executable can be run by using the command:
+
+If on Linux or Win,
+
+    $ ./eddypro_rp name.eddypro
+    
+If on Mac,
+
+    $ ./eddypro_rp -s mac name.eddypro
+
 ### GUI
 
 Source code compilation instructions for the GUI are undergoing a revision. They will posted as soon the update is completed.
