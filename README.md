@@ -68,7 +68,13 @@ To compile the Engine use [gfortran](https://gcc.gnu.org/wiki/GFortran)
     $ make rp
     $ make fcc
 
-Install `gfortran` on Linux Ubuntu using the code, `sudo apt install gfortran`.
+Install `gfortran` on Linux Ubuntu using the code, `sudo apt install gfortran`. The "file-or-directory-not-found" error might show up when running eddypro, if it is not installed.
+
+Sometimes, temporary files or folders cannot be created by the operating system. The folder `tmp` may be needed to be created manually in the folder one level above the executable folder, such as the `bin` folder. Create the folder using the command,
+
+    $ mkdir -p tmp
+
+Note that `-p` means, create parent directories as needed.
 
 ### Running EddyPro on the Terminal
 
