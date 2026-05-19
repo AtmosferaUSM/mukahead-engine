@@ -53,6 +53,8 @@ Start the installation program like any executable on the development platform.
 Select the components that you want to install and follow the instructions of
 the installation program to complete the installation.
 
+## 
+
 ## Building EddyPro from source
 
 To build EddyPro follow these instructions:
@@ -65,6 +67,8 @@ To compile the Engine use [gfortran](https://gcc.gnu.org/wiki/GFortran)
     $ cd prj
     $ make rp
     $ make fcc
+
+Install `gfortran` on Linux Ubuntu using the code, `sudo apt install gfortran`.
 
 ### Running EddyPro on the Terminal
 
@@ -92,13 +96,19 @@ In the `*.metadata`,
 
 After placing the GHG files in the appropriate folder, the executable can be run by using the command:
 
-If on Linux or Win,
+If on Linux,
 
-    $ ./eddypro_rp name.eddypro
+    $ ./eddypro_rp -s linux name.eddypro
+
+If on Windows,
+
+    $ ./eddypro_rp -s win name.eddypro
     
 If on Mac,
 
     $ ./eddypro_rp -s mac name.eddypro
+
+IMPORTANT NOTE: that if the operating system is not specified, the "file-or-directory-not-found" error might show up.
 
 ### GUI
 
@@ -152,6 +162,8 @@ following command line utilities under the 'bin' sub-directory:
 
 - 7-zip
 - pausep
+
+The default unzip-executable of eddypro is 7-zip. Install it using the command on Linux Ubuntu, `sudo apt install sevenzip'.
 
 ### 7-zip
 
