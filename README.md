@@ -59,7 +59,7 @@ the installation program to complete the installation.
 
 To build EddyPro follow these instructions:
 
-### Engine
+### PREREQUISITES 1: Engine
 
 To compile the Engine use [gfortran](https://gcc.gnu.org/wiki/GFortran)
 (The GNU Fortran compiler) and run:
@@ -161,15 +161,15 @@ directory where the source code is:
             for both debug and release targets
     5. In the 'eddypro.pro' project, build both targets -->
 
-## Utilities
+## PREREQUISITES 2: Utilities
 
-To successfully run Eddypro, the program installation folder must contain the
+IMPORTANT: To successfully run Eddypro, the program installation folder must contain the
 following command line utilities under the 'bin' sub-directory:
 
 - 7-zip
 - pausep
 
-The default unzip-executable of eddypro is 7-zip. Install it using the command on Linux Ubuntu, `sudo apt install sevenzip'.
+The default unzip-executable of eddypro is 7-zip. Install it using the command on Linux Ubuntu, `sudo apt install sevenzip`.
 
 ### 7-zip
 
